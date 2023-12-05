@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Material 3 Adaptive Navigation Suite Demo</string>
+    <string name="home">Home</string>
+    <string name="list">List</string>
+    <string name="favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+</resources>
