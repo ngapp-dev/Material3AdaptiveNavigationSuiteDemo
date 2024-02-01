@@ -4,9 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
-import androidx.compose.material3.adaptive.collectWindowSizeAsState
+import androidx.compose.material3.adaptive.currentWindowSize
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.IntSize
@@ -24,7 +23,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MainTheme {
-                val windowSize by collectWindowSizeAsState()
+                val windowSize = currentWindowSize()
                 MainApp(
                     windowSize = windowSize.toDpSize(),
                 )
